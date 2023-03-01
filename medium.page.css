@@ -1,0 +1,279 @@
+/* general elements styling */
+body {
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(255, 192, 23);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0px;
+  border-bottom: 1px solid black;
+  height: 100px;
+  z-index: 1;
+}
+main {
+  margin-top: 100px;
+  margin-left: 0;
+ 
+}
+
+h1 {
+  font-size: 100px;
+  box-sizing: border-box;
+}
+
+h2 {
+  font-weight: 400px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 24px;
+}
+
+h3 {
+  box-sizing: border-box;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.page-sections {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 35px;
+}
+
+.logo-image {
+  width: 200px;
+  object-fit: cover;
+  color: black;
+  border-radius: 100px;
+}
+
+.sign-button {
+  background-color: black;
+  color: white;
+  margin-right: 0;
+  border: none;
+  line-height: 20px;
+  font-size: 14px;
+  border-radius: 24px;
+  font-weight: bold;
+  padding: 13px 25px;
+}
+
+.start-button {
+  background-color: black;
+  color: white;
+  border: none;
+  line-height: 20px;
+  font-size: 20px;
+  border-radius: 24px;
+  font-weight: bold;
+  padding: 10px 60px;
+  margin: 20px auto;
+}
+
+.intro-section {
+  background-color: rgb(255, 192, 23);
+  padding: 70px 50px;
+  /* margin-left: 0;
+  margin-right: 0px; */
+  border-bottom: 1px solid black;
+}
+
+/* trending section styling */
+
+.trending-section {
+  padding: 20px;
+}
+
+.trending-title {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.trending-articles {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.trending-article {
+  display: flex;
+  gap: 20px;
+  box-sizing: border-box;
+  align-items: start;
+  width: 50%;
+}
+
+.trending-article-count {
+  color: rgb(230, 230, 230);
+  font-size: 40px;
+  font-weight: bold;
+}
+.trending-article-author {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.trending-article-description {
+  display: flex;
+  flex-flow: column wrap;
+  margin-top: 10px;
+}
+
+/* remaining section  */
+
+.remaining-section {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+}
+.subject-section {
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 15px;
+  position: static;
+}
+
+
+.discover-section {
+  flex-basis: 40%;
+  border: 1px solid rgb(224, 206, 206);
+}
+
+.discover-section > p {
+  padding: 0px 20px;
+  font-weight: 700;
+  font-size: 20px;
+  position: static;
+}
+
+.subject-section p {
+  border: 1px solid rgb(224, 206, 206);
+  color: rgb(104, 100, 100);
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.article-section {
+  display: flex;
+  column-gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+ 
+}
+
+
+.article-description h3 {
+  display: none;
+}
+
+.article-description button {
+  border: none;
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 15px;
+  color: gray;
+  cursor: pointer;
+
+}
+
+.article-author {
+  display: flex;
+  column-gap: 10px;
+}
+
+
+/* footer styling */
+
+footer {
+  background-color: black;
+}
+
+footer img {
+  width: 200px;
+  padding-left: 20px;
+}
+footer .terms {
+  display: flex;
+  column-gap: 20px;
+  padding-left: 30px;
+}
+
+ .terms p {
+  color: white;
+  cursor: pointer;
+}
+.terms p:hover {
+  text-decoration: underline;
+}
+.applinks {
+  display: none;
+}
+.applinks div {
+  display: flex;
+}
+.applinks p {
+  text-decoration: none;
+  padding-left: 30px;
+  color: white;
+}
+.applinks img {
+  width: 100px;
+  padding-left: 30px;
+  padding-bottom: 20px;
+}
+
+@media screen and (min-width: 904px) {
+  .remaining-section {
+    flex-direction: row-reverse;
+  }
+  .article-description h3 {
+    display: contents;
+  }
+  .discover-section {
+    width: 100%;
+  }
+  .subject-section {
+    position: sticky;
+    top: 25%;
+    z-index: 0;
+  }
+  .discover-section > p {
+    position: sticky;
+    top: 15%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .page-sections p {
+    display: none;
+  }
+  .trending-article {
+    flex-basis: 100%;
+  }
+  .article-description button {
+ display: none;
+  
+  }
+  .article-section > img {
+    width: 30%;
+    height: 50%;
+  }
+  .applinks {
+    display: contents;
+  }
+
+
+}
