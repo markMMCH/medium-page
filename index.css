@@ -12,45 +12,47 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  padding: 0px;
+  padding: 0;
   border-bottom: 1px solid black;
-  height: 100px;
-  z-index: 1;
+  height: 6.25rem;
+  z-index: 2;
 }
+
 main {
-  margin-top: 100px;
+  margin-top: 6.25rem;
   margin-left: 0;
- 
+  margin-right: 0;
 }
 
 h1 {
-  font-size: 100px;
-  box-sizing: border-box;
+  font-size: 5rem;
+  padding: 4.375rem 0px;
 }
 
 h2 {
-  font-weight: 400px;
+  font-weight: 25rem;
   font-family: Arial, Helvetica, sans-serif;
-  line-height: 24px;
+  max-lines: 3;
 }
 
 h3 {
   box-sizing: border-box;
-  margin-top: 10px;
-  margin-bottom: 5px;
+  margin-top: 0.625rem;
+  margin-bottom: 0.313;
 }
+
 .page-sections {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 35px;
+  gap: 2rem;
 }
 
 .logo-image {
-  width: 200px;
+  width: 12.5rem;
   object-fit: cover;
   color: black;
-  border-radius: 100px;
+  border-radius: 6.25rem;
 }
 
 .sign-button {
@@ -58,43 +60,41 @@ h3 {
   color: white;
   margin-right: 0;
   border: none;
-  line-height: 20px;
-  font-size: 14px;
-  border-radius: 24px;
+  line-height: 1.25rem;
+  font-size: 0.8rem;
+  border-radius: 1.5rem;
   font-weight: bold;
-  padding: 13px 25px;
+  padding: 0.8rem 1.5rem;
 }
 
 .start-button {
   background-color: black;
   color: white;
   border: none;
-  line-height: 20px;
-  font-size: 20px;
+  line-height: 1.25rem;
+  font-size: 1.25rem;
   border-radius: 24px;
   font-weight: bold;
-  padding: 10px 60px;
-  margin: 20px auto;
+  padding: 0.6rem 3.75rem;
+  margin: 1.25rem auto;
 }
 
 .intro-section {
   background-color: rgb(255, 192, 23);
-  padding: 70px 50px;
-  /* margin-left: 0;
-  margin-right: 0px; */
+  padding: 7rem 4rem;
   border-bottom: 1px solid black;
 }
 
 /* trending section styling */
 
 .trending-section {
-  padding: 20px;
+  padding: 1.25rem;
 }
 
 .trending-title {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 1rem;
 }
 
 .trending-articles {
@@ -105,7 +105,7 @@ h3 {
 
 .trending-article {
   display: flex;
-  gap: 20px;
+  gap: 1.25rem;
   box-sizing: border-box;
   align-items: start;
   width: 50%;
@@ -113,19 +113,19 @@ h3 {
 
 .trending-article-count {
   color: rgb(230, 230, 230);
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: bold;
 }
+
 .trending-article-author {
   display: flex;
   align-items: center;
-  column-gap: 10px;
+  column-gap: 0.6rem;
 }
 
 .trending-article-description {
   display: flex;
   flex-flow: column wrap;
-  margin-top: 10px;
 }
 
 /* remaining section  */
@@ -133,16 +133,15 @@ h3 {
 .remaining-section {
   display: flex;
   flex-direction: column;
-  padding: 0 20px;
-}
-.subject-section {
-  padding: 0 20px;
-  display: flex;
-  flex-wrap: wrap;
-  column-gap: 15px;
-  position: static;
+  padding: 0 1.25rem;
 }
 
+.subject-section {
+  padding: 0 1.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 0.9rem;
+}
 
 .discover-section {
   flex-basis: 40%;
@@ -150,30 +149,27 @@ h3 {
 }
 
 .discover-section > p {
-  padding: 0px 20px;
+  padding: 0px 1.25rem;
   font-weight: 700;
-  font-size: 20px;
-  position: static;
+  font-size: 1.25rem;
 }
 
 .subject-section p {
   border: 1px solid rgb(224, 206, 206);
   color: rgb(104, 100, 100);
-  padding: 10px;
-  border-radius: 5px;
-  margin-top: 5px;
+  padding: 0.4rem;
+  border-radius: 0.3rem;
+  margin-top: 0.3rem;
   cursor: pointer;
 }
 
 .article-section {
   display: flex;
-  column-gap: 20px;
+  column-gap: 1.25rem;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
- 
+  padding: 0.6rem;
 }
-
 
 .article-description h3 {
   display: none;
@@ -181,19 +177,17 @@ h3 {
 
 .article-description button {
   border: none;
-  padding: 10px;
-  border-radius: 20px;
-  font-size: 15px;
+  padding: 0.6rem;
+  border-radius: 1.25rem;
+  font-size: 1rem;
   color: gray;
   cursor: pointer;
-
 }
 
 .article-author {
   display: flex;
-  column-gap: 10px;
+  column-gap: 0.6rem;
 }
-
 
 /* footer styling */
 
@@ -202,78 +196,111 @@ footer {
 }
 
 footer img {
-  width: 200px;
-  padding-left: 20px;
-}
-footer .terms {
-  display: flex;
-  column-gap: 20px;
-  padding-left: 30px;
+  width: 12.5rem;
+  padding-left: 1.25rem;
 }
 
- .terms p {
+footer .terms {
+  display: flex;
+  column-gap: 1.25rem;
+  padding-left: 1.8rem;
+}
+
+.terms p {
   color: white;
   cursor: pointer;
 }
+
 .terms p:hover {
   text-decoration: underline;
 }
+
 .applinks {
   display: none;
 }
+
 .applinks div {
   display: flex;
 }
+
 .applinks p {
   text-decoration: none;
-  padding-left: 30px;
+  padding-left: 1.8rem;
   color: white;
 }
+
 .applinks img {
-  width: 100px;
-  padding-left: 30px;
-  padding-bottom: 20px;
+  width: 6.25rem;
+  padding-left: 1.8rem;
+  padding-bottom: 1.25rem;
 }
 
-@media screen and (min-width: 904px) {
+@media screen and (min-width: 1004px) {
   .remaining-section {
     flex-direction: row-reverse;
   }
+
   .article-description h3 {
     display: contents;
   }
+
   .discover-section {
     width: 100%;
   }
+
   .subject-section {
     position: sticky;
     top: 25%;
-    z-index: 0;
   }
+
   .discover-section > p {
     position: sticky;
     top: 15%;
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
+  .intro-section {
+    padding-left: 0px;
+    padding-right: 50px;
+  }
+
+  .intro-section h2,
+  .intro-section h1,
+  .intro-section button {
+    margin-left: 2rem;
+  }
+
   .page-sections p {
     display: none;
   }
+
   .trending-article {
     flex-basis: 100%;
   }
+
   .article-description button {
- display: none;
-  
+    display: none;
   }
+
   .article-section > img {
     width: 30%;
     height: 50%;
   }
+
   .applinks {
     display: contents;
   }
+}
 
-
+@media screen and (max-width: 300px) {
+  .intro-section h2,
+  .intro-section h1,
+  .intro-section button {
+    margin-left: 0.2rem;
+    margin-right: 1.2rem;
+  }
+  .page-sections {
+    margin-right: 1.5rem;
+  }
 }
