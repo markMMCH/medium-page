@@ -20,24 +20,24 @@ async function getArticles(isTrending) {
 }
 
 getArticles(true).then((trendingArticles) => {
-  const trends = document.createElement("div");
+  let trends = document.createElement("div");
   trends.classList.add("trending-articles");
-  for (let i = 0; i < 6; i++) {
+  trendingArticles.map((trendingArt, i) => {
     const trendingArticleCount = document.createElement("div");
     trendingArticleCount.classList.add("trending-article-count");
     trendingArticleCount.innerText = `0${i + 1}`;
     const title = document.createElement("h3");
-    title.innerText = trendingArticles[i].title;
+    title.innerText = trendingArt.title;
     const dateAndType = document.createElement("p");
     dateAndType.innerText =
-      trendingArticles[i].date + " · " + trendingArticles[i].length;
+    trendingArt.date + " · " + trendingArt.length;
     const trendingArticleAuthor = document.createElement("div");
     trendingArticleAuthor.classList.add("trending-article-author");
     const authorImage = document.createElement("img");
-    authorImage.src = trendingArticles[i].authorImageUrl;
+    authorImage.src = trendingArt.authorImageUrl;
     authorImage.style.borderRadius = i !== 5 ? "50%" : "20%";
     const authorName = document.createElement("p");
-    authorName.innerText = trendingArticles[i].author;
+    authorName.innerText = trendingArt.author;
     trendingArticleAuthor.appendChild(authorImage);
     trendingArticleAuthor.appendChild(authorName);
     const trendingArticleDescription = document.createElement("div");
@@ -50,7 +50,7 @@ getArticles(true).then((trendingArticles) => {
     trendingArticle.appendChild(trendingArticleCount);
     trendingArticle.appendChild(trendingArticleDescription);
     trends.appendChild(trendingArticle);
-  }
+  });
   document.querySelector(".trending-section").appendChild(trends);
 });
 
@@ -62,7 +62,6 @@ for (let i = 0; i < subjects.length; ++i) {
 
 getArticles(false).then((articles) => {
   const sections = document.querySelectorAll(".article-section");
-
   sections.forEach((element, index) => {
     element.innerHTML =
       `<div class="article-description"><h2> ${articles[index].title}</h2>` +
