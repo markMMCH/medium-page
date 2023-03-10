@@ -68,6 +68,6 @@ getArticles(false).then((articles) => {
       `<h3> ${articles[index].description}</h3>` +
       `<p>${articles[index].date} &#183; ${articles[index].length} &#183;
        <button>${articles[index].type}</button></p></div>` +
-      `<img src="${articles[index].imageUrl}">`;
+      `<img width="250px" src="${articles[index].imageUrl}">`;
   });
 });

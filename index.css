@@ -1,4 +1,13 @@
 /* general elements styling */
+@font-face {
+  font-family: 'gt_super_ds_trialrg';
+  src: url('assets/gt-font/gt-super-display-regular-trial-webfont.woff2') format('woff2'),
+       url('assets/gt-font/gt-super-display-regular-trial-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
 body {
   margin: 0;
 }
@@ -19,8 +28,10 @@ header {
 }
 
 h1 {
-  font-size: 5rem;
-  padding: 4.375rem 0px;
+  font-size: 5.5rem;
+  padding: 4.375rem 0;
+  font-weight: 500;
+  font-family: "gt_super_ds_trialrg", Georgia, "Times New Roman", Times, serif
 }
 
 h2 {
@@ -90,6 +101,7 @@ button {
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .trending-article {
@@ -115,6 +127,7 @@ button {
 .trending-article-description {
   display: flex;
   flex-flow: column wrap;
+  width: 80%;
 }
 
 /* remaining section  */
@@ -123,6 +136,7 @@ button {
   display: flex;
   flex-direction: column;
   padding: 0 1.25rem;
+  margin: 0 1.5rem;
 }
 
 .subject-section {
@@ -170,10 +184,10 @@ button {
 .article-description button {
   background-color: rgb(242, 242, 242);
   border: none;
-  padding: 0.6rem;
-  border-radius: 1.25rem;
-  font-size: 1rem;
-  color: gray;
+  padding: 0.4rem;
+  border-radius: 1rem;
+  font-size: 0.9rem;
+  color: rgba(0, 0, 0, 0.4);
   cursor: pointer;
 }
 
@@ -235,6 +249,7 @@ footer .terms {
 
   .article-description h3 {
     display: contents;
+    font-weight: 200;
   }
 
   .discover-section {
@@ -295,5 +310,17 @@ footer .terms {
   }
   .page-sections {
     margin-right: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 67.5rem) {
+  .trending-article {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 44rem) {
+  .trending-article {
+    width: 100%;
   }
 }
