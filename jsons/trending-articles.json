@@ -1,0 +1,52 @@
+[
+  {
+    "authorImageUrl":
+      "https://miro.medium.com/fit/c/25/25/0*7ZLgZWh2nTXrR1HM.jpeg",
+    "author": "Praveen Seshardi",
+    "title": "The maze is in the house",
+    "date": "Feb 14",
+    "length": "15 min read"
+  },
+  {
+    "authorImageUrl":
+      "https://miro.medium.com/fit/c/25/25/1*0oIJdWxqjL9Y6P0B0J6Syw.jpeg",
+    "author": "Tom Cooper",
+    "title": "Ukraine War, 26 February 2023: Bakhmut",
+    "date": "Feb 26",
+    "length": "5 min read"
+  },
+  {
+    "authorImageUrl":
+      "https://miro.medium.com/fit/c/25/25/1*pZIPldUG0GZXpLsfT7Xb3Q.jpeg",
+    "author": "Ifedolapo Shiloh Olotu",
+    "title":
+      "Disqualified from a National Web Design Competition…for using GitHub",
+    "date": "Feb 23",
+    "length": "4 min read"
+  },
+  {
+    "authorImageUrl":
+      "https://miro.medium.com/fit/c/25/25/2*vXhEWaz8APHM6GaVpcTFRQ.jpeg",
+    "author": "Brandon Van Der Heide",
+    "title": "There is a crack in everything",
+    "date": "Feb 14",
+    "length": "5 min read"
+  },
+  {
+    "authorImageUrl":
+      "https://miro.medium.com/fit/c/25/25/1*3STednUKL3lkYQxtw1Xavg.jpeg",
+    "author": "Darius Foroux",
+    "title": "The Simple Mental Model That Changed My Financial Life",
+    "date": "Feb 22",
+    "length": "5 min read"
+  },
+  {
+    "authorImageUrl":
+      "https://miro.medium.com/fit/c/25/25/1*CJe3891yB1A1mzMdqemkdg.jpeg",
+    "author": "Piero Paialunga in Towards Data Science",
+    "title":
+      "Using OpenAI and Python to Enhance Your Resume: A Step-by-Step Guide",
+    "date": "Feb 14",
+    "length": "10 min read"
+  }
+]
