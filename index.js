@@ -20,7 +20,7 @@ async function getArticles(isTrending) {
 }
 
 getArticles(true).then((trendingArticles) => {
-  let trends = document.createElement("div");
+  const trends = document.createElement("div");
   trends.classList.add("trending-articles");
   trendingArticles.map((trendingArt, i) => {
     const trendingArticleCount = document.createElement("div");
