@@ -3,7 +3,6 @@ const subjects = [
   "Data Science",
   "Technology",
   "Self Improvement",
-  "Self Improvement",
   "Writing",
   "Relationships",
   "Machine Learning",

@@ -163,18 +163,12 @@ button {
 }
 
 .subject-section {
-  padding: 0 1.25rem;
   display: flex;
   flex-wrap: wrap;
   column-gap: 0.9rem;
 }
 
-.discover-section {
-  flex-basis: 40%;
-}
-
 .discover-section > p {
-  padding: 0px 1.25rem;
   font-weight: 700;
   font-size: 1.25rem;
 }
@@ -188,16 +182,13 @@ button {
   cursor: pointer;
 }
 
-.articles-section {
-  border-top: 1px solid rgb(230, 216, 216);
-}
 
 .article-section {
   display: flex;
   column-gap: 1.25rem;
   justify-content: space-between;
   align-items: center;
-  padding: 0.6rem;
+  padding-bottom: 0.6rem;
 }
 
 .article-description h3 {
@@ -265,7 +256,7 @@ footer .terms {
   padding-bottom: 1.25rem;
 }
 
-@media screen and (min-width: 55.75rem) {
+@media screen and (min-width: 60.75rem) {
   .remaining-section {
     flex-direction: row-reverse;
     margin: auto;
@@ -277,17 +268,11 @@ footer .terms {
   }
 
   .discover-section {
-    width: 100%;
-  }
-
-  .subject-section {
+    align-self: flex-start;
     position: sticky;
-    top: 25%;
-  }
-
-  .discover-section > p {
-    position: sticky;
-    top: 15%;
+    padding-left: 1.5rem;
+    top: 10%;
+    width: 48%;
   }
 }
 
@@ -325,6 +310,16 @@ footer .terms {
     font-size: 3rem;
   }
   
+  .article-section h2 {
+    font-size: 0.8rem;
+  }
+
+  .article-section img {
+    width: 6rem;
+    height: 6rem;
+    object-fit: cover;
+  }
+
   .logo-image {
     width: 10rem;
   }
